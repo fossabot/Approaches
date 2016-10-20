@@ -59,7 +59,7 @@ H1-H6：
 
  引入图片格式： ` ![picture描述](picture.jpg) `
 
- ![picture direction](picture.jpg)
+ ![落花掌](luo hua.jpg)
 
  >值得一说的是这图片*链接地址*不能是本地的（就不能是电脑上的文件）、要是网上的图片链接，当然，可以上传到github然后图片地址名为你的图片名 “picture.jpg”就行了
 
