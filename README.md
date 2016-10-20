@@ -64,9 +64,9 @@ H1-H6：
 
 - **列表（偷个懒，直接上图了）***
 
-![list](list.png)
+ ![list](list.png)
 
 
 - **表格**
 
-![table](table.png)
+ ![table](table.png)
