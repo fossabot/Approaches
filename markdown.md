@@ -50,7 +50,7 @@ H1-H6：
  console.log("Hello world!");
 }
 ```
-![code](the code format.png)
+![code](picture/the code format.png)
 
 
 - **图片**
