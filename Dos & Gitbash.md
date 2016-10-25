@@ -191,7 +191,7 @@ java hw
     1. cd e:\git_code 命令到版本库文件夹下（我是在e盘下创建了git_code文件夹，前面说过了）
     2. touch reader.txt 命令创建一个新的txt文本：reader.txt 。
     3. git add reader.txt 命令，告诉Git，把文件添加到仓库
-    4.. echo "I love you">>reader.txt 命令往reader.txt文本中添加内容I love you 字符串。
+    4. echo "I love you">>reader.txt 命令往reader.txt文本中添加内容I love you 字符串。
       （查看修改的内容:git diff ）
     5. 查看reader.txt文本内容 :cat reader.txt 。
     6. 把所有文件添加到版本库(注意：add后+空格+ . ):  git add .
