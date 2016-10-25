@@ -3,28 +3,56 @@
 
  - console.log() 接收不定参数，参数间用逗号分隔，最终会输出会将它们以空白字符连接。
 
- ``` console.log('hi','hello')  //hi hello```
+ ```javascript
+ console.log('hi','hello')  
+ //hi hello
+ ```
 
 
  - 控制台（表格形式输出）：
  
-``` var data = [{'品名': '杜雷斯', '数量': 4}, {'品名': '冈本', '数量': 3}];console.table(data); ```
+ ```javascript 
+ var data = [{'品名': '杜雷斯', '数量': 4}, {'品名': '冈本', '数量': 3}];
+ console.table(data);
+ ```
 
  - 控制台（条件判断输出）：
  
-```console.assert(3>2,'不满足条件')  //undefined```
+ ```javascript
+ console.assert(3>2,'不满足条件')  
+ //undefined
+ ```
 
  - 控制台（程序运行时间）：
 
-``` console.time('ddd') var dd = function ddd() {return 1+3;}(); dd; console.timeEnd('ddd') //ddd:0.032ms```
+ ```javascript 
+ console.time('ddd') 
+ var dd = function ddd() {
+ return 1+3
+ ;}(); 
+ dd; 
+ console.timeEnd('ddd')
+ //ddd:0.032ms
+ ```
 
-``` console.time('ddd');
-(function dd() {return 1+3;})();
-console.timeEnd('ddd');//ddd: 0.022ms ```
+ ```javascript 
+ console.time('ddd');
+ (function dd() {
+ return 1+3;
+ })();
+ console.timeEnd('ddd');
+ //ddd: 0.022ms
+ ```
  
  
  - 如果不用内置console.time的话：
- ```var start=new Date().getTime();var array= new Array(1000000);for (var i = array.length - 1; i >= 0; i--) { array[i] = new Object();};console.log(new Date().getTime()-start);//236```
+ ```var start=new Date().getTime();
+ var array= new Array(1000000);
+ for (var i = array.length - 1; i >= 0; i--) { 
+ array[i] = new Object()
+ ;};
+ console.log(new Date().getTime()-start);
+ //236```
 
 
  - console.log(Date()) 
@@ -36,7 +64,13 @@ console.timeEnd('ddd');//ddd: 0.022ms ```
 
  - 控制台（返回属性名组成的数组和属性值的数组）
  
- ```var tboy={name:'wayou',gender:'unknown',hobby:'opposite to the gender'};keys(tboy);//["name", "gender","hobby"]values(tboy);//["wayou", "unknown", "opposite to the gender"]```
+ ```javascript
+ var tboy={name:'wayou',gender:'unknown',hobby:'opposite to the gender'};
+ keys(tboy);
+ //["name",    "gender","hobby"]
+ values(tboy);
+ //["wayou", "unknown", "opposite to the gender"]
+ ```
 
 
  - 格式化打印{ }
