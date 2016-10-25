@@ -135,6 +135,74 @@ java hw
   - `java ds/list/TestList`
 
 
+-------------------------------------------------------------
+
+
+#### ***gitBash：***
+1. 进入	
+	`cd`  
+	
+2. 创建（win中还可用md） 
+	`mkdir`
+	
+3. 删除（win中用rd删除）
+	`rm `
+	
+4. 文件名.txt(bash中不能使用)
+	`del	`
+	
+5. 误删除，恢复
+	`git checkout -- 文件名`
+	
+6. 査看当前文件
+	`dir`（或者ls）
+	
+7. 往文本添加内容
+	`echo 内容>>文件名.txt`
+	
+8. 获取到版本号
+	`git reflog`
+	
+9. 査看文件内容
+	`cat 文本`
+	
+10. 命令是用于显示当前的目录
+	`pwd `
+	
+11.  把当前目录变成git可以管理的仓库，如下：
+     `git init`
+	 
+*这时候你当前testgit目录下会多了一个.git的目录，这个目录是Git来跟踪管理版本的，没事千万不要手动乱改这个目录里面的文件，否则，会把git仓库给破坏了*
+
+------------------------------------------------------
+
+##### *自制'栗子’: gitbash小实例*
+
+    版本库创建成功后：
+    把文件添加到版本库
+    第一步：用命令git add告诉Git，把文件添加到仓库：
+    $ git add readme.txt
+    第二步：用命令git commit告诉Git，把文件提交到仓库。
+    $ git commit -m "new file info"
+   
+######   * 下图是详细步骤：*
+
+    1. cd e:\git_code 命令到版本库文件夹下（我是在e盘下创建了git_code文件夹，前面说过了）
+    2. touch reader.txt 命令创建一个新的txt文本：reader.txt 。
+    3. git add reader.txt 命令，告诉Git，把文件添加到仓库
+    4.. echo "I love you">>reader.txt 命令往reader.txt文本中添加内容I love you 字符串。
+      （查看修改的内容:git diff ）
+    5. 查看reader.txt文本内容 :cat reader.txt 。
+    6. 把所有文件添加到版本库(注意：add后+空格+ . ):  git add .
+    7. 最后使用 git status 命令查看仓库当前状态。
+
+###### *关于版本的回退与恢复：*
+使用版本回退操作:`git reset –hard HEAD^`
+版本号回退，使用命令方法：`git reset –hard 版本号`
+获取版本号：`git reflog`
+
+
+
 
 
 
