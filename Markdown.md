@@ -70,3 +70,7 @@ H1-H6：
 - **表格**
 
  ![table](picture/table.png)
+ 
+- **行内代码**
+
+ ![line code](line code.png)
