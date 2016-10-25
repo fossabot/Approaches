@@ -1,4 +1,5 @@
 ### dos命令，有时还是要了解一下的，下面列举了一下自己常用的命令
+### 还有常用的版本控制命令gitbash命令行的使用
 
 #### ***cmd中：***
 
@@ -180,9 +181,9 @@ java hw
 
     版本库创建成功后：
     把文件添加到版本库
-    第一步：用命令git add告诉Git，把文件添加到仓库：
+    第一步：用命令git add告诉Git，把文件添加到仓库：
     $ git add readme.txt
-    第二步：用命令git commit告诉Git，把文件提交到仓库。
+    第二步：用命令git commit告诉Git，把文件提交到仓库。
     $ git commit -m "new file info"
    
 ######   * 下图是详细步骤：*
