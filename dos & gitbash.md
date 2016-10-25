@@ -44,12 +44,13 @@
 
 ##### *自制‘栗子’： 完全cmd命令编译HELLO WORLD!*
 ###### win+R调出命令提示符 键入cmd
-```html 
+
+```javascript 
 echo class hw {public static void main(String[] args ){ System.out.println("HELLO WORLD!"); }}>>hw.txt
 ren hw.txt hw.java
 javac hw.java
 java hw
-HELLO WORLD!
+//HELLO WORLD!
 ```
 
 ----------------------------------------------------------
