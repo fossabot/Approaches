@@ -1,6 +1,12 @@
 
 #### Git Bash软件基础命令:
 
+##### 零、建立本地与远程仓库的连接
+
+`$ ssh-keygen -t rsa -C "youremail@example.com"`
+本地找到.ssh目录，有id_rsa和id_rsa.pub两个文件，SSH Key的秘钥对，id_rsa是私钥，id_rsa.pub是公钥，可以放心地告诉任何人。登陆GitHub，打开“Account settings”，“SSH Keys”页面：然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。
+
+
 #####  一、创建空目录
 - `mkdir newFile`    新建一个文件夹
 
@@ -71,7 +77,7 @@ Git的版本库里存了很多东西，其中最重要的就是称为**stage**�
 ![](picture/stage空.jpg)
 
 
-六、撤销修改
+##### 六、撤销修改
 
 1. `git checkout -- file`  可以丢弃工作区的修改
 
@@ -80,7 +86,9 @@ Git的版本库里存了很多东西，其中最重要的就是称为**stage**�
 1. 版本回 退：提交了不合适的修改到版本库时，想要撤销本次提交
 
 
-七、删除文件
+##### 七、删除文件
 1. 从版本库中删除该文件，那就用命令`git rm`删掉，并且`git commit`
 
 1. `git checkout`   用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”
+
+##### 八、远程库的管理
