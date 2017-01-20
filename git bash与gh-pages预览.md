@@ -2,9 +2,9 @@
 #### Git Bash软件基础命令:
 
 #####  一、创建空目录
-`mkdir newFile`    新建一个文件夹
+- `mkdir newFile`    新建一个文件夹
 
-`cd newFile`      进入文件夹
+- `cd newFile`      进入文件夹
 
 `pwd`    显示当前目录
 
@@ -14,7 +14,7 @@
 
 
 ##### 二、本地创建版本库（repository）
-`git init`    newFile文件夹内有一个.git的目录，这个目录是Git来跟踪管理版本库的
+- `git init`    newFile文件夹内有一个.git的目录，这个目录是Git来跟踪管理版本库的
 
 ~~Initialized empty Git repository in /Users/TGQ/newFile/.git/~~
 
@@ -27,9 +27,9 @@
 
 ##### 三、提交文件到版本库
 
-`git add .`
+- `git add .`   （添加到工作区）
 
-`git commit -m "提交的备注"`
+- `git commit -m "提交的备注"`   （提交到暂存区）
 
 `git status`    掌握仓库当前的状态（文件被修改过）
 
@@ -41,9 +41,9 @@
 
 ##### 四、版本回退
 
-`git log `     提交日志
+- `git log `     提交日志
 
-` git reset --hard HEAD^（或者是commit_id）`  回退上一个版本
+- ` git reset --hard HEAD^（或者是commit_id）`  回退上一个版本
 
 `git reflog`  命令历史
 
@@ -69,3 +69,18 @@ Git的版本库里存了很多东西，其中最重要的就是称为**stage**�
 一旦提交后，如果你又没有对工作区做任何修改，那么工作区就是“干净”的`git status`：
 
 ![](picture/stage空.jpg)
+
+
+六、撤销修改
+
+1. `git checkout -- file`  可以丢弃工作区的修改
+
+1. `git reset HEAD file`   ==》 1     可以丢弃暂存区的修改
+
+1. 版本回 退：提交了不合适的修改到版本库时，想要撤销本次提交
+
+
+七、删除文件
+1. 从版本库中删除该文件，那就用命令`git rm`删掉，并且`git commit`
+
+1. `git checkout`   用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”
