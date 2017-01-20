@@ -92,3 +92,34 @@ Git的版本库里存了很多东西，其中最重要的就是称为**stage**�
 1. `git checkout`   用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”
 
 ##### 八、远程库的管理
+
+`git remote add origin git@server-name:path/repo-name.git`   关联远程库
+
+`git push -u origin master`    第一次推送master分支的内容到远程库
+
+`git push origin maste`   之后推送最新修改；
+
+
+
+
+
+##### 九、克隆远程库
+
+` git clone git@github.tgqnnanman/kkkk.git`    这里是用的ssh协议，也有https可选
+
+
+
+##### 十、杂杂的
+
+**偷懒命令**
+
+- `git lg` 提交的情况-别名
+
+`git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
+
+- `git last`   最后一次提交情况-别名
+
+`git config --global alias.last 'log -1'`
+
+![](pictures/bieming01.png)
+![](pictures/bieming02.png)
