@@ -121,5 +121,5 @@ Git的版本库里存了很多东西，其中最重要的就是称为**stage**�
 
 `git config --global alias.last 'log -1'`
 
-![](pictures/bieming01.png)
-![](pictures/bieming02.png)
+![](picture/bieming01.png)
+![](picture/bieming02.png)
